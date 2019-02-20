@@ -3,7 +3,10 @@ my:
   code: Hello from DEV YML
 spring:
   profiles:
-    active: uat  
+    active: prod
+    include:
+    - prodserver  
+    - proddb
 ---
 my:
  env:

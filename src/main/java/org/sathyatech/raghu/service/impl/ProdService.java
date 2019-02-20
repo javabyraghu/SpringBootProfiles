@@ -12,9 +12,14 @@ public class ProdService implements GenericService{
 	@Value("${my.env.code}")
 	private String code;
 	
+	@Value("${db.name}")
+	private String code1;
+	@Value("${app.name}")
+	private String code2;
+	
 	@Override
 	public void executeService() {
-		System.out.println("CODE IS:"+code);
+		System.out.println("CODE IS:"+code+","+code1+","+code2);
 		System.out.println("from Production");
 	}
 
